@@ -2,14 +2,15 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { ClockIcon, AcademicCapIcon, BookOpenIcon } from '@heroicons/react/24/outline';
 
-interface Lesson {
+// Type definitions
+export interface Lesson {
   id: number;
   title: string;
   duration: string;
   isCompleted?: boolean;
 }
 
-interface Course {
+export interface Course {
   id: number;
   title: string;
   description: string;
@@ -22,6 +23,7 @@ interface Course {
   lessons: Lesson[];
 }
 
+// Course data
 const course: Course = {
   id: 1,
   title: 'Основы программирования',
@@ -40,6 +42,7 @@ const course: Course = {
   ],
 };
 
+// Component definition
 const CourseDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
 
@@ -141,4 +144,5 @@ const CourseDetails: React.FC = () => {
   );
 };
 
+// Default export
 export default CourseDetails; 
