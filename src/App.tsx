@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Courses from './pages/Courses';
-import CourseDetails from './pages/CourseDetails';
+import CourseDetails from './pages/CourseDetails.tsx';
 import Profile from './pages/Profile';
 import Progress from './pages/Progress';
 
