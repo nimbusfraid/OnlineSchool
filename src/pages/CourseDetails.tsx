@@ -47,9 +47,11 @@ const CourseDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
 
   // В реальном приложении здесь был бы запрос к API для получения данных курса по id
+  console.log(`Loading course details for ID: ${id}`);
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
+      <div className="text-sm text-gray-500 mb-4">ID курса: {id}</div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Основная информация */}
         <div className="lg:col-span-2">
